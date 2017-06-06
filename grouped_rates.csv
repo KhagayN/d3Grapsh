@@ -1,0 +1,7 @@
+,9075
+InterestRate:IRSwap:FixedFloat,5962
+InterestRate:CrossCurrency:Basis,1348
+InterestRate:IRSwap:OIS,594
+InterestRate:IRSwap:Basis,565
+InterestRate:Option:Swaption,327
+InterestRate:Exotic,278
