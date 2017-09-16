@@ -9,6 +9,7 @@ plugins {
 }
 
 scmVersion {
+    ignoreUncommittedChanges = false
     tag {
         prefix = 'my-project-name'
     }
