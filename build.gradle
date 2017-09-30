@@ -12,7 +12,7 @@ scmVersion {
     ignoreUncommittedChanges = false
     hooks {
 	pre {	
-		println scmVersion.version - "SNAPSHOT"
+		println scmVersion.version - "-SNAPSHOT"
 		println scmVersion.version
 	}
     }
