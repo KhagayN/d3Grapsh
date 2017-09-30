@@ -17,6 +17,7 @@ scmVersion {
 		println scmVersion.version
 		println ext.release
 		ext.undecoratedVersion=ext.undecoratedVersion - "-SNAPSHOT"
+		println "undecoratedVersion is now: " + ext.undecoratedVersion
 	}
     }
 }
@@ -24,6 +25,8 @@ scmVersion {
 project.version = scmVersion.version
 ext {
 	release = ""
+	undecoratedVersion="1.3333.4"
+	println "undecoratedVersion" + undecoratedVersion 
 	results = ext.release.contains("true") ? "yes" : "no"	
  	println "errrrrrrrr" + results
 }
