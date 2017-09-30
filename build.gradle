@@ -12,7 +12,8 @@ scmVersion {
     ignoreUncommittedChanges = false
     hooks {
 	pre { 
-	}
+	    release = "true"
+ 	}
     }
 }
 
