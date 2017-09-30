@@ -14,7 +14,7 @@ scmVersion {
 	pre {	
 		println scmVersion.version - "-SNAPSHOT"
 		println scmVersion.version
-		println ext.release
+		println $rootProject.ext.release
 		ext.undecoratedVersion = "-SNAPSHOT"
 		println "undecoratedVersion is now: " + ext.undecoratedVersion
 	}
