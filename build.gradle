@@ -13,6 +13,7 @@ scmVersion {
     hooks {
 	pre {	
 		println scmVersion.version - "-SNAPSHOT"
+		scmVersion.version = scmVersion.version - "-SNAPSHOT"
 		println scmVersion.version
 	}
     }
