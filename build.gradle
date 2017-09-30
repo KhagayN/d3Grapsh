@@ -13,7 +13,7 @@ scmVersion {
     hooks {
 	pre {	
 		println scmVersion.version - "-SNAPSHOT"
-		def release = true
+		ext.release = true
 		println scmVersion.version
 	}
     }
@@ -22,3 +22,6 @@ scmVersion {
 println "the release number is: " release
 
 project.version = scmVersion.version
+ext {
+	release = ""	
+}
