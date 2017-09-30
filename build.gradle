@@ -15,6 +15,7 @@ scmVersion {
 		println scmVersion.version - "-SNAPSHOT"
 		ext.release = true
 		println scmVersion.version
+		println ext.release
 	}
     }
 }
