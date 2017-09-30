@@ -20,3 +20,5 @@ scmVersion {
 }
 
 project.version = scmVersion.version
+println release
+
