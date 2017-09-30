@@ -19,6 +19,6 @@ scmVersion {
     }
 }
 
-project.version = scmVersion.version
-println "the release number is: " + release
+println "the release number is: " release
 
+project.version = scmVersion.version
