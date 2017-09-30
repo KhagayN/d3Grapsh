@@ -11,7 +11,7 @@ plugins {
 scmVersion {
     ignoreUncommittedChanges = false
     tag {
-	prefix = 'hello'
+	prefix = ''
     	versionSeparator = ''
     	}	    
 }
