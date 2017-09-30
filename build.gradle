@@ -10,9 +10,6 @@ plugins {
 
 scmVersion {
     ignoreUncommittedChanges = false
-    tag {
-        prefix = 'my-project-name'
-    }
 }
 
 project.version = scmVersion.version
