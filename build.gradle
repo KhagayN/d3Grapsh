@@ -10,8 +10,9 @@ plugins {
 
 scmVersion {
     ignoreUncommittedChanges = false
-    prefix=''
-		    
+    prefix = ''
+    versionSeparator = ''
+    		    
 }
 
 project.version = scmVersion.version
