@@ -16,6 +16,7 @@ scmVersion {
 		ext.release = "true"
 		println scmVersion.version
 		println ext.release
+		println "undecoratedVersion in the pre-release hook is: " + ext.undecoratedVersion
 		ext.undecoratedVersion = "-SNAPSHOT"
 		println "undecoratedVersion is now: " + ext.undecoratedVersion
 	}
