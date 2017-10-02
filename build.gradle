@@ -8,14 +8,6 @@ plugins {
     id 'pl.allegro.tech.build.axion-release' version '1.7.2'
 }
 
-ext {
-	release = "aaaaaaa"
-	undecoratedVersion = "1.3333.4-SNAPSHOT"
-	println "undecoratedVersion" + undecoratedVersion 
-	results = ext.release.contains("true") ? "yes" : "no"	
- 	println "errrrrrrrr" + results
-}
-
 scmVersion {
     ignoreUncommittedChanges = false
     hooks {
@@ -25,9 +17,17 @@ scmVersion {
 		println ext.release
 		ext.undecoratedVersion = "-SNAPSHOT"
 		println "undecoratedVersion is now: " + ext.undecoratedVersion
+		println "undecorated version is:::::::: " + scmVersion.undecoratedVersion
 	}
     }
 }
 
 project.version = scmVersion.version
 
+ext {
+	release = "aaaaaaa"
+	undecoratedVersion = "1.3333.4-SNAPSHOT"
+	println "undecoratedVersion" + undecoratedVersion 
+	results = ext.release.contains("true") ? "yes" : "no"	
+ 	println "errrrrrrrr" + results
+}
