@@ -14,7 +14,6 @@ scmVersion {
 	pre {	
 		println scmVersion.version - "-SNAPSHOT"
 		println scmVersion.version
-		println ext.release
 		ext.undecoratedVersion = "-SNAPSHOT"
 		println "undecoratedVersion is now: " + ext.undecoratedVersion
 		println "undecorated version is:::::::: " + scmVersion.undecoratedVersion
